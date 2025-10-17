@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        'Spotify - Web Player: Music for everyone'</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utility.css">
+    <link rel="icon" sizes="32x32" type="image/png" href="https://open.spotifycdn.com/cdn/images/favicon32.b64ecc03.png"/>
+</head>
+
+<body>
+    <div class="container  bg-black">
+        <nav class="bg-black btnhover">
+            <div class="nav1 flex-1 ">
+                <div class="logo"><img class="invert" src="img/logo.svg" alt=""></div>
+                <div class="home"><img class="invert" src="img/home.svg" alt=""></div>
+                <div class="search flex-1">
+                    <img class="invert" src="img/search.svg" alt="">
+                    <input type="text" placeholder="What do you want to play ?">
+                    <img class="invert" src="img/browse.svg" alt="">
+                </div>
+            </div>
+            <div class="nav2 flex-1">
+                <div class="options1 flex-1">
+                    <button>Premium</button>
+                    <button>Support</button>
+                    <button>Download</button>
+                </div>
+                <div class="options2 flex-1">
+                    <img class="invert" src="img/install.svg" alt="">
+                    <button>Install App</button>
+                    <button>Sign up</button>
+                    <button class=" button-bg login ">Log in</button>
+                </div>
+            </div>
+        </nav>
+        <div class="combine ">
+            <div class="left bg-gray-2 m-1  ">
+                <div class="library ">
+                    <div class="flex-2 heading bg-gray-2">
+                        <img class="invert" src="img/library.svg" alt="">
+                        <h class="font-weight-2">Your Library</h>
+                        <button><img class="svg-w cross" src="img/plus.svg" alt=""></button>
+                    </div>
+                    <div class="songslist bg-gray-3">
+                        <ul>
+                            <li>
+
+                                <div  class="info">
+
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- <div class="overflow">
+                        <div class="heading-box1 heading-box bg-gray-3 flex-3">
+                            <h class="big-font">Create your first playlist</h>
+                            <h class="small-font">It's Easy we'll help you</h>
+                            <button class="button-bg">Create playlist</button>
+                        </div>
+                        <div class="heading-box2 heading-box bg-gray-3 flex-3">
+                            <h class="big-font">Let's find some podcast to follow</h>
+                            <h class="small-font">We'll keep updated on new episodes</h>
+                            <button class="button-bg">Browse podcasts</button>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="left-footer">
+                    <div>
+                        <ul class="lists m-1  light-color">
+                            <li><a href="">Legal</a></li>
+                            <li><a href="">Safety & privacy center</a></li>
+                            <li><a href="">privacy policy</a></li>
+                            <li><a href="">Cookies</a></li>
+                            <li><a href="">About Ads</a></li>
+                            <li><a href="">Accessbility</a></li>
+                        </ul>
+                    </div>
+                    <div class="english  p-1 ">
+
+                        <button class="flex-1 m-2 p-2">
+                            <img class="svg-w2 invert" src="img/earth.svg" alt="">
+                            English
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="right bg-gray-2 m-1 p-1">
+                <div class="trending-songs">
+                    <div class="rightnav">
+                        <img class="hamburger invert" src="img/hamberguer.svg" alt="">
+                        <h1>Your Playlist's</h1>
+                    </div>
+                    <div class="cards">
+
+                        <!-- <div data-folder="Dhanush_songs" class="card ">
+                            <svg class="greenplay" width="100" height="100" viewBox="0 0 100 100"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="48" fill="#39DE74" />
+                                <polygon points="40,30 70,50 40,70" fill="black" />
+                            </svg>
+
+                            <img src="https://i.scdn.co/image/ab67616d00001e02bd7e1592d75a9ad8d211debd" alt="">
+                            <h2 class="big-font">Qatal</h2>
+                            <p class="small-font light-color">Guru Randhawa,Sanjoy,Gill Machhrai</p>
+                        </div>
+                        <div data-folder="fav_songs" class="card ">
+                            <svg class="greenplay" width="100" height="100" viewBox="0 0 100 100"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="48" fill="#39DE74" />
+                                <polygon points="40,30 70,50 40,70" fill="black" />
+                            </svg>
+
+                            <img src="https://i.scdn.co/image/ab67616d00001e02bd7e1592d75a9ad8d211debd" alt="">
+                            <h2 class="big-font">Qatal</h2>
+                            <p class="small-font light-color">Guru Randhawa,Sanjoy,Gill Machhrai</p>
+                        </div> -->
+
+                    </div>
+                </div>
+                <div class="playbar">
+                    <div class="songinfo">
+                        --/--
+                    </div>
+                    <div class="abovebar">
+
+                        <div class="songs-btn">
+                            <img id="previous" src="img/previoussong.svg" alt="">
+                            <img id="play" src="img/play.svg" alt="">
+                            <img id="next" src="img/nextsong.svg" alt="">
+                        </div>
+                        <div class="timevol">
+
+                            <div class="songtime">
+                                --/--
+                            </div>
+                            <div class="volume">
+                                <img src="img/volume.svg" alt="">
+                                <div class="range">
+                                    <input type="range" name="range ">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="seekbar">
+                        <div class="circleseekbar">
+
+                        </div>
+                        <div class="circle">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
